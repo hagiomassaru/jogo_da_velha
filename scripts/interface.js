@@ -9,7 +9,17 @@ function handleclick(event) {
     let square = event.target;
     let position = square.id;
 
-    handMove(position);
+    if (handMove(position) == true) {
+        let jogador;
+        if (playTime == 0) {
+            jogador = "Espada";
+        } else {
+            jogador = "Escudo";
+        }
+        setTimeout(() => {
+            alert("JOGO ACABOU - O jogador " + jogador + " Venceu.");
+        }, 10);
+    }
 
     updateSquare();
 }
