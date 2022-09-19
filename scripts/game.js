@@ -35,8 +35,6 @@ function handMove(position) {
 }
 
 function isWin() {
-    
-
     for (let i = 0; i < winstate.length; i++) {
         let sequencia = winstate[i];
 
@@ -53,4 +51,11 @@ function isWin() {
         }
     }
     return false;
+}
+
+function zerar() {
+    board = ["", "", "", "", "", "", "", "", ""];
+    playTime = 0;
+    gameOver = false;
+    updateSquareNone();
 }

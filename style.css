@@ -38,3 +38,21 @@ h1 {
     left: 0;
     right: 0;
 }
+
+button {
+    background-color: #5d57ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #5855bb;
+}
+
+button:active {
+    background-color: #2019f0;
+}

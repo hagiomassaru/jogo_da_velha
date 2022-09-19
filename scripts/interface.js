@@ -35,3 +35,9 @@ function updateSquare() {
         }
     });
 }
+function updateSquareNone() {
+    let squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+        square.innerHTML = ``;
+    });
+}
